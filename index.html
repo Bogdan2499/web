@@ -1,36 +1,101 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Detecting HTML5 Features - Dive Into HTML5</title>
-<style>
-body{counter-reset:h1 2}
-</style>
-<p>You are here: <a href="index.html">Home</a> <span class="u triangularBullet"></span> <a href="table-of-contents.html#detect">Dive Into <abbr>HTML5</abbr></a> <span class="u triangularBullet"></span>
-<blockquote><h1><br>Detecting <abbr>HTML5</abbr> Features</h1>
-<p id="toc">&nbsp;
-<p class="a rotatedFloralHeartBullet">
-<h2 id="divingin">Diving In</h2>
+<html >
 
-<b class="f">You may well ask: &ldquo;How can I start using <abbr>HTML5</abbr> if older browsers don&rsquo;t support it?&rdquo; But the question itself is misleading. <abbr>HTML5</abbr> is not one big thing; it is a collection of individual features. So you can&rsquo;t detect &ldquo;<abbr>HTML5</abbr> support,&rdquo; because that doesn&rsquo;t make any sense. But you <em>can</em> detect support for individual features, like canvas, video, or geolocation.
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 
-<p class="a rotatedFloralHeartBullet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
 
-<h2 id="techniques">Detection Techniques</h2>
+<body>
 
-<p>When your browser renders a web page, it constructs a Document Object Model (<abbr><dfn>DOM</dfn></abbr>), a collection of objects that represent the <abbr>HTML</abbr> elements on the page. Every element &mdash; every <code>&lt;p&gt;</code>, every <code>&lt;div&gt;</code>, every <code>&lt;span&gt;</code> &mdash; is represented in the <abbr>DOM</abbr> by a different object. (There are also global objects, like <code>window</code> and <code>document</code>, that aren&rsquo;t tied to specific elements.)
 
-<p class="ss" ><img src="i/openclipart.org_johnny_automatic_peeking_out_the_window.png">
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="news.html">Новини</a></li>
+        <li><a href="reviews.html">Відгуки</a></li>
+        <li><a href="admin.html">Адмін</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="students.html">Студентам
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Програма</a></li>
+            <li><a href="#">Лабораторні</a></li>
+            <li><a href="students.html">Література</a></li>
+          </ul>
+        </li>
 
-<p>All <abbr>DOM</abbr> objects share a set of common properties, but some objects have more than others. In browsers that support <abbr>HTML5</abbr> features, certain objects will have unique properties. A quick peek at the <abbr>DOM</abbr> will tell you which features are supported.
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<p>There are four basic techniques for detecting whether a browser supports a particular feature. From simplest to most complex:
 
-<u>
-<li>
-<p>Check if a certain property exists on a global object (such as <code>window</code> or <code>navigator</code>).
-<li>
-<p>Create an element, then check if a certain property exists on that element.
-<li>
-<p>Create an element, check if a certain method exists on that element, then call the method and check the value it returns.
-<li>
-<p>Create an element, set a property to a certain value, then check if the property has retained its value.
-</ol>
+    <div class="title expandUp">
+      <h1 id="title">Проблеми судового захисту <br> в цивільному судочинстві</h1>
+      <h3 id="subtitle">Доц. Богдан Й. Г.</h3>
+
+    </div>
+
+  <div class="info">
+    <h1 id="about">Про предмет</h1>
+
+    <h3 id="meta">Мета</h3>
+    <div id="center">
+      Засвоєння студентами теоретичних знань щодо захисту суб’єктами своїх прав у порядку цивільного судочинства, а також формування практичних умінь і навиків щодо правильного тлумачення та застосування цивільно-правових норм, що регулюють зазначену сферу
+      відносин.
+    </div>
+    &nbsp;
+    <h3 id="zmist">Зміст</h3>
+    <div id="you">
+      Правосуддя форма реалізації судової влади. Суб’єкти судових правовідносин та їх повноваження. Повноваження судів, які розглядають справи, що виникають із приватних та публічних правовідносин. Доказування і докази в теорії та судовій практиці. Право на
+      звернення до суду та правові наслідки звернення. Забезпечення швидкого і правильного розгляду справи. Правове положення суб’єктів судового розгляду. Правові наслідки судового розгляду. Перевірка рішень, ухвал та постанов судів. Загальні положення
+      примусового виконання рішень, ухвал та постанов судів.
+    </div>
+
+
+  </div>
+  <div class="news">
+    <h1 id="news">Останні новинни</h1>
+    <p>
+      <span>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+    </p>
+    <p>
+      <span>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+    </p>
+  </div>
+  <footer>
+    <div id="footer">
+      <div id="twitter"></div>
+      <div id="sitemap"></div>
+      <div id="social"></div>
+      <div id="footer-logo"></div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

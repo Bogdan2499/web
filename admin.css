@@ -1,0 +1,37 @@
+body{
+  background-color: #FF0000;
+}
+.adminMenu{
+  margin-top: 50px;;
+  margin-left: 50px;
+}
+textarea{
+  min-height: 250px;
+}
+.btn{
+  margin-top: 20px;
+  background-color: #FF0000;
+}
+
+.img-news{
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+.subtext{
+  margin-bottom: 3%;
+}
+
+
+
+footer {position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0;
+    width: 100%;
+    background-color: #28282a !important;
+    color: #FF0000;
+    height: 100px;
+    padding-top: 10px;
+}
+
+footer a {
+    color: #FF0000;
+}
